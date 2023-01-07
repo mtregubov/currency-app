@@ -12,6 +12,8 @@ Web consists of SPA (reactjs) and go backend.
 # Usage
 
 ## Build docker image
+    $ git clone https://github.com/mtregubov/currency-app.git
+    $ cd currency-app
     $ make build-docker
 
 ## CLI 
@@ -42,3 +44,4 @@ Open the following url in the browser:
 ##  TODO
 1. Add tests
 1. Add validation for the input data
+1. Add holidays to the database
