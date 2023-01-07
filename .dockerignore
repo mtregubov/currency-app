@@ -1,0 +1,9 @@
+.git
+data/*
+curcli
+cursrv
+data.db
+curr-ui/node_modules
+build
+http/build
+.DS_Store
