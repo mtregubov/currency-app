@@ -29,8 +29,8 @@ function RateSearchForm ({handleInputChange, formInputData, handleSubmit}) {
         <Col className="col-md-auto">
           <Form.Control id="curr" name="curr" type="text" value={formInputData.curr} onChange={handleInputChange} placeholder="Enter currency code"/>
         </Col>
-        <Col className="col-md-auto">
-          <Form.Control name="date" type="text" value={formInputData.date} onChange={handleInputChange} placeholder="31.12.2019"/>
+        <Col className="col-md-3">
+          <Form.Control name="date" type="text" value={formInputData.date} onChange={handleInputChange} placeholder="Enter date in 2020 in format dd.mm.yyyy"/>
         </Col>
         <Col className="col-md-auto">
           <Button variant="primary" type="submit">
@@ -111,12 +111,12 @@ function App() {
         console.log(err.message);
       });
 
-      const checkEmptyInput = !Object.values(formInputData).every(res=>res==="")
-      if(checkEmptyInput)
-      {
-      const emptyInput= {curr:'', date:'', message:''}
-      setformInputData(emptyInput)
-      }
+      // const checkEmptyInput = !Object.values(formInputData).every(res=>res==="")
+      // if(checkEmptyInput)
+      // {
+      // const emptyInput= {curr:'', date:'', message:''}
+      // setformInputData(emptyInput)
+      // }
     } 
 
     return (
